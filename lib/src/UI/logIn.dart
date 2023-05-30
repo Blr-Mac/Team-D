@@ -147,7 +147,9 @@ class LogInPage extends State<LogIn> {
                     return 'Enter User Name';
                   }
                   return null;
-                }),
+                },
+              onEditingComplete: formValidation,//call formvalidation on edit complete
+                ),
           ),
           Text(""),
           SizedBox(
@@ -160,6 +162,7 @@ class LogInPage extends State<LogIn> {
                 labelText: 'Enter Password',
                 border: OutlineInputBorder(),
               ),
+              onEditingComplete: formValidation,//call formvalidation on edit complete
             ),
           ),
           Text(""),
