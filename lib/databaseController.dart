@@ -1,6 +1,6 @@
 // import 'dart:/ffi';
 import 'dart:io';
-import 'package:team_d_project/current_user.dart';
+import 'package:team_d_project/src/current_user.dart';
 import 'package:team_d_project/person.dart';
 import 'package:team_d_project/item.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
