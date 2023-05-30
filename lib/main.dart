@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:team_d_project/logIn.dart';
-import 'menu.dart';
-import 'panel.dart';
-import 'profileMenu.dart';
-import 'modelViewController.dart';
+import 'package:team_d_project/src/UI/logIn.dart';
+import 'src/UI/menu.dart';
+import 'src/UI/panel.dart';
+import 'src/UI/profileMenu.dart';
+import 'src/UI/modelViewController.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+import 'src/Database/firebase_options.dart';
 
 void main() async {
   await Firebase.initializeApp(

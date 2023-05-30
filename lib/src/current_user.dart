@@ -1,4 +1,4 @@
-import '../person.dart';
+import 'person.dart';
 
 class CurrentUser extends Person {
   static String _uName = "";

@@ -1,6 +1,6 @@
-import 'package:team_d_project/item.dart';
-import 'package:team_d_project/databaseController.dart';
-import 'src/current_user.dart';
+import 'package:team_d_project/src/item.dart';
+import 'package:team_d_project/src/Database/databaseController.dart';
+import '../current_user.dart';
 
 // Takes UI input and talks to database Controller for data
 class ModelViewController {

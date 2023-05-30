@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:team_d_project/modelViewController.dart';
-import 'package:team_d_project/InteractableItem.dart';
+import 'package:team_d_project/src/UI/modelViewController.dart';
+import 'package:team_d_project/src/UI/InteractableItem.dart';
 import 'modelViewController.dart';
-import 'item.dart';
+import '../item.dart';
 import 'searchListWidget.dart';
 
 //panels for tabbed info on main screen
