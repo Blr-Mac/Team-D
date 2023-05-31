@@ -4,6 +4,7 @@ class Item {
   String _itemName = "";
   String _owner = "";
   String _status = "";
+  String _borrower = "1";
 
   Item(String itemName, String owner, String status) {
     this._itemName = itemName;
@@ -18,6 +19,10 @@ class Item {
     return _owner;
   }
 
+  String getBorrower(){
+    return _borrower;
+  }
+
   String getStatus() {
     return _status;
   }
@@ -26,6 +31,10 @@ class Item {
   void setStatus(String status) {
     _status = status;
   }
+  void setBorrower(String borrower) {
+    _borrower = borrower;
+  }
+
 
   // Creates a map of item information to store in database
   // want to add functionality of who currently is borrowing the item if it is borrowed
@@ -34,6 +43,7 @@ class Item {
       if (_itemName != null) "itemName": _itemName,
       if (_owner != null) "owner": _owner,
       if (_status != null) "status": _status,
+      if (_borrower !=null) "borrower": _borrower
     };
   }
 
@@ -55,6 +65,7 @@ class Item {
             Text(" Item:  $_itemName"),
             Text(" Owner:  $_owner "),
             Text(" Status: $_status "),
+            Text(" Borrower: $_borrower ")
           ],
         ),
         const Text("    "),
@@ -62,3 +73,4 @@ class Item {
     );
   }
 }
+
