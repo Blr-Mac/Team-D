@@ -81,7 +81,9 @@ jobs:
           echo "storePassword=${{ secrets.STORE_PASSWORD }}" >> android/key.properties
           echo "keyPassword=${{ secrets.KEY_PASSWORD }}" >> android/key.properties
           echo "keyAlias=${{ secrets.KEY_ALIAS }}" >> android/key.properties
-          echo "keyAlia=${{ secrets.KEYSTORE_BASE64 }}" >> android/key.properties
+          echo "keystoreKey=${{ secrets.KEYSTORE_BASE64 }}" >> android/key.properties
+          echo "zipKey=${{ secrets.ANDROID_KEYSTORE }}" >> android/key.properties
+
           cat android/key.properties
       - uses: actions/setup-java@v3
         with:
