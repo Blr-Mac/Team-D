@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'item.dart';
+import '../item.dart';
 import 'modelViewController.dart';
 import 'InteractableItem.dart';
 

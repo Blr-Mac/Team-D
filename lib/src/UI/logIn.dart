@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:team_d_project/main.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'current_user.dart';
+import '../current_user.dart';
 
 class LogIn extends StatefulWidget {
   const LogIn({Key? key}) : super(key: key);
@@ -147,7 +147,9 @@ class LogInPage extends State<LogIn> {
                     return 'Enter User Name';
                   }
                   return null;
-                }),
+                },
+              onEditingComplete: formValidation,//call formvalidation on edit complete
+                ),
           ),
           Text(""),
           SizedBox(
@@ -160,6 +162,7 @@ class LogInPage extends State<LogIn> {
                 labelText: 'Enter Password',
                 border: OutlineInputBorder(),
               ),
+              onEditingComplete: formValidation,//call formvalidation on edit complete
             ),
           ),
           Text(""),

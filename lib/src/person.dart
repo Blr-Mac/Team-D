@@ -91,6 +91,8 @@ class Person {
   void borrowAItem(Item item) {
     if (item.getStatus() == "Available") {
       item.setStatus("Borrowed");
+      item.setBorrower("5000");
+      print(item.getBorrower());
       bItems.add(item.toFirestore());
     }
   }
